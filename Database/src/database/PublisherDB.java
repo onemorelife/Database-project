@@ -15,7 +15,7 @@ private Connection getConnection()
         try
         {
             // set the home directory for Derby
-            String dbDirectory = "/database/java/db"; //NOTE:Will probably need adjusting                                                                    
+            String dbDirectory = "/Database/src/database"; //NOTE:Will probably need adjusting                                                                    
             System.setProperty("derby.system.home", dbDirectory);
 
             // set the db url, username, and password
