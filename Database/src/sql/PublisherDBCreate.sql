@@ -8,11 +8,11 @@ DROP TABLE Merchandise;
 -- create Anime table
 CREATE TABLE Anime
 (
-    Series VARCHAR(40), 
-	Code VARCHAR(4), 
-	Primier DATE,
-	Episodes INT,
-	Demographic VARCHAR(40)
+    series VARCHAR(40), 
+	code VARCHAR(4), 
+	premiere DATE,
+	episodes INT,
+	demographic VARCHAR(40)
 );
 
 -- insert data into Anime table
@@ -31,11 +31,11 @@ SELECT * FROM Anime;
 -- create Studio table
 CREATE TABLE Studio
 (
-	Studio VARCHAR(40),
-	Code VARCHAR(4), 
-	Debit DOUBLE,
-	Credit DOUBLE,
-	Billing DATE	
+	studio VARCHAR(40),
+	code VARCHAR(4), 
+	debit DOUBLE,
+	credit DOUBLE,
+	billing DATE	
 );
 
 -- insert data into Studio table
@@ -54,11 +54,11 @@ SELECT * FROM Studio;
 -- create Merchandisetable 
 CREATE TABLE Merchandise
 (
-	Product VARCHAR(40),
-	Inventory INT,
-	Sold INT,
-	Code VARCHAR(4),
-	Profit DOUBLE
+	product VARCHAR(40),
+	inventory INT,
+	sold INT,
+	code VARCHAR(4),
+	profit DOUBLE
 );
 
 INSERT INTO Merchandise VALUES
