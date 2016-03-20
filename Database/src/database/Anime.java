@@ -1,4 +1,4 @@
-package exampledb;
+package database;
 
 /**
  *
@@ -76,4 +76,3 @@ public class Anime
         this.demographic = demographic;
     }
 }
-
