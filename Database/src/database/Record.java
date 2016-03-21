@@ -11,6 +11,7 @@ public class Record
      * The Field value has to have a matching index to the name
      * IE the object in the third position of FieldValues is the
      * value located at the third field in the result set
+     * Sorting has to take place in the SQL query
      * @param fieldNames
      * @param fieldValues 
      */

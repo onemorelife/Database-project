@@ -9,7 +9,7 @@ import java.sql.*;
  */
 public class PublisherDB 
 {
-private Connection getConnection()
+    private Connection getConnection()
     {
         Connection connection = null;
         try
@@ -32,7 +32,6 @@ private Connection getConnection()
 			return null;
         }
     }
-
     //TODO: methods for getting, adding, deleting 
     
 }
