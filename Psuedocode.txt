@@ -1,0 +1,90 @@
+Model
+  database
+  write interface
+    update function
+    delete function
+  read interface
+    read function
+  PublisherDB Class
+  
+View
+  Initial Panel
+    constructor
+      places all table names in the combo box
+    Combo Box - Table Names
+    Button - view selected
+      open new Table panel, displays info from selected panel
+    button - delete selected
+      deletes selected panel
+      commits all changes to database
+    button - search
+      open new search panel
+    button - create table
+      open create table panel
+      commits all changes to database
+    button - exit
+      closes the whole program
+
+  Table Panel
+    updateTable function
+      sets the name for the table
+      sets the field names
+      sets all values for each field for each record
+        creates rows as needed
+    consturctor
+      runs updateTable
+    button - add record
+      opens add record panel
+      commit changes to the databse
+      runs updateTable
+    button - delete record
+      opens delete record panel
+      commit changes to the databse
+      runs updateTable
+    button - Edit
+      changes the state of the table to be editable
+      commit changes to the databse
+      runs updateTable
+    button - exit
+      closes current window
+
+  Add Table Panel
+    nothing for now
+
+  Search Panel
+    constuctor
+      sets the label and all table values to an empty string
+      sets all table names to first combo box
+    combo box - table names
+      selecting sets all field names to second combo box
+    combo box - field names
+      selecting sets the conditions for the third combo box
+    combo box - conditions
+      does nothing
+    button - search
+      searches selected table, where the selected field matches the
+        info written into the text box, under the selected condition
+
+  Add Record Panel
+    constructor
+      sets the names for the labels (field names)
+    button - add record
+      validates the info for each field
+      creates record object from info in each field
+      saves new record object to table's arraylist
+      commits changes to database
+    button - exit
+      closes current window
+
+  Delete Record Panel
+  
+Control
+  Main
+    ArrayList of tables
+  table class
+    String name
+    ArrayList of records
+    ArrayList of Strings (field names)
+  record class
+    ArrayList of objects (values for the fields)
+      ^abouve two have matching indexes for field name/value
