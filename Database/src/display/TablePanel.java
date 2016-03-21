@@ -14,7 +14,8 @@ public class TablePanel extends javax.swing.JPanel {
     /**
      * Creates new form TablePanel
      */
-    public TablePanel() {
+    public TablePanel() 
+    {
         initComponents();
     }
 
